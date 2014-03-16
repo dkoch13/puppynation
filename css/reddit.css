@@ -1,0 +1,79 @@
+#reddit {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.block {
+  display: none;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.photo {
+  width: 300px;
+  position: absolute;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+
+.photo img {
+  width: 300px;
+  border-bottom: 2px solid #ccc;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.photo figcaption {
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a.permalink {
+  width: 300px;
+  margin-top: 10px;
+
+}
+
+iframe {
+  display: block;
+  height: 250px;
+  width: 290px;
+  position: absolute;
+  border-radius: 5px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+
+.paginate {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: -30px;
+  color: #777;
+  display: none;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+

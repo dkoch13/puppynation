@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PuppyNation</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link href="css/reddit.css" rel="stylesheet">
+
+  </head>
+  <body onload="setupBlocks();">
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">PuppyNation</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon ion-social-reddit-outline"></i> Reddit <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">Subreddits</li>
+                <li><a href="index.html">Aww</a></li>
+                <li><a href="reddit-puppies.html">Puppies</a></li>
+                <li><a href="reddit-corgis.html">Corgis</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-instagram"></i> Instagram <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">Search Tags</li>
+                <li><a href="instagram-puppies.html">Puppies</a></li>
+                <li><a href="instagram-corgis.html">Corgis</a></li>
+                <li><a href="instagram-shibas.html">Shibas</a></li>
+                <li><a href="instagram-huskies.html">Huskies</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2 id="title" class="navbar-text title">r/Aww</h2>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Credits</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+      
+    <div id="loading"><i class="fa fa-refresh fa-spin fa-5x"></i></div>
+
+    <div id="reddit"></div>
+
+    <div id="footer">
+      <div class='paginate'>
+        <p id='load-more'><i id="spinner" class="fa fa-refresh fa-spin fa-3x"></i></p>
+      </div>
+    </div>
+
+    <a href="#top" class="top" title="Go to Top"><i class="fa fa-arrow-circle-o-up fa-3x"></i></a>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/pinterest.js"></script>
+    <script type="text/javascript" src="js/reddit-aww.js"></script>
+    <script type="text/javascript" src="js/reddit.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body { 
+  background-image: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/lghtmesh.png');
+	padding-top: 50px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #4a9de7;
+}
+
+img {
+  vertical-align: middle;
+}
+
+hr {
+  margin: 0;
+}
+
+.container.container-main{
+	border-left: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-default {
+	background-color: rgba(248,248,248,0.95);
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-form {
+	max-width: 400px;
+}
+
+.title {
+	position: absolute;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	color: #9a9a9a;
+  z-index: 20;
+}
+
+.top:hover {
+	color: #7b7b7b;
+}
+
+#loading {
+	position: absolute;
+	top: 30%;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  margin-top: 10px;
+  text-align: center;
+  color: #777;
+}

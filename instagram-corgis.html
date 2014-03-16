@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PuppyNation</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/instagram.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">PuppyNation</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-github-alt"></i> Reddit <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">Subreddits</li>
+                <li><a href="index.html">Aww</a></li>
+                <li><a href="reddit-puppies.html">Puppies</a></li>
+                <li><a href="reddit-corgis.html">Corgis</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-instagram"></i> Instagram <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">Search Tags</li>
+                <li><a href="instagram-puppies.html">Puppies</a></li>
+                <li><a href="instagram-corgis.html">Corgis</a></li>
+                <li><a href="instagram-shibas.html">Shibas</a></li>
+                <li><a href="instagram-huskies.html">Huskies</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <h2 id="title" class="navbar-text title">Corgis</h2>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Credits</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container container-main">
+
+      <div id="loading"><i class="fa fa-spinner fa-spin fa-5x"></i></div>
+
+      <div id='photos-wrap'></div>
+
+      <div class='paginate'>
+        <a class='btn btn-primary btn-lg' id='load-more' style='display:none;' data-max-tag-id='' href='#'>Load More <i class="fa fa-chevron-down"></i></a>
+      </div>
+
+      <a href="#top" class="top" title="Go to Top"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+
+    </div>  
+
+    <script type="text/template" id="photo-template">
+      <div id='media' class='photo <%= type %>' style='display:none;'>
+        <img class='main <%= type %>' src='<%= photo %>' style='display:none;' onload='Instagram.App.showPhoto(this);' />
+        <a href='http://instagram.com/<%= username %>' target='_blank' class='username'><h4>@<%= username %></h4></a>
+        <span class='caption'><p><%= caption %></p></span>
+        <div class="share">
+          <div class="share-buttons">
+            <a class="facebook" href="http://www.facebook.com/sharer.php?u=<%= url %>" title="Share on Facebook"
+             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+             target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a class="twitter" href="http://twitter.com/intent/tweet?url=<%= url %>&text=Aww so cute!&hashtags=puppy,aww,cute,puppynation&via=puppynation" title="Share on Twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+             target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a class="email" href="mailto:?subject=Cute puppy!&body=<%= url %> - courtesy of PuppyNation"><i class="fa fa-envelope fa-2x" title="Share via email"></i></a>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/instagram-corgis.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

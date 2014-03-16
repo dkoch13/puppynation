@@ -1,0 +1,108 @@
+#photos-wrap {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.photo  {
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 5px;
+  background: white;
+  padding: 5px;
+  margin: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 622px;
+}
+
+.photo img {
+	width: 612px;
+	height: 612px;
+}
+
+.photo .username {
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	border-radius: 5px;
+  background-color: rgba(0,0,0,0.3);
+  padding: 5px;
+  color: #ccc;
+}
+
+.username:hover {
+	color: #c2c2c2;
+}
+
+.username h4 {
+	margin: 0;
+}
+
+.photo .caption {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	width: calc(100% - 10px);
+	padding: 10px;
+	margin: 0 5px;
+	padding-bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	text-align: left;
+	color: #d6d6d6;
+	opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.photo:hover .caption {
+	opacity: 1;
+}
+
+.photo .heart {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 3px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.photo .share {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: rgba(0,0,0,0.3);
+  padding: 5px 3px 3px 3px;
+  border-radius: 5px;
+  
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.photo:hover .share {
+	opacity: 1;
+}
+
+.share i {
+	text-align: center;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.photo .share a {
+	color: #fff;
+}
+
+.photo .share a:hover {
+	color: #f4f4f4;
+}
